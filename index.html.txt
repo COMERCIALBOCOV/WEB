@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercial BOCOV SpA - Servicios Industriales</title>
+    <style>
+        :root {
+            --primary: #0A2540;
+            --secondary: #0070F3;
+            --accent: #00D4FF;
+            --dark: #1A1A1A;
+            --gray: #6C757D;
+            --light-gray: #F8F9FA;
+            --border: #E5E7EB;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--dark);
+            background-color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #113F67 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid var(--accent);
+        }
+
+        .logo-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .logo-container p {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .hero {
+            background-color: var(--light-gray);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--gray);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .metrics {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .metric-card {
+            background: white;
+            padding: 1.5rem 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 3px solid var(--secondary);
+        }
+
+        .metric-card h3 {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .metric-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent);
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            border-color: var(--secondary);
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        .contact {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact h2::after {
+            background-color: var(--accent);
+        }
+
+        .contact-info {
+            font-size: 1.2rem;
+            margin: 1.5rem 0;
+        }
+
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #111;
+            color: #888;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <h1>Comercial BOCOV SpA</h1>
+            <p>Ingeniería y Servicios Industriales Especializados</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Soluciones Integrales para Maquinaria Gráfica y de Packaging</h2>
+        <p>Expertos en montaje, desmontaje, traslado, nivelación y anclaje con altos estándares técnicos para optimizar la productividad de su industria.</p>
+        
+        <div class="metrics">
+            <div class="metric-card">
+                <h3>20+</h3>
+                <p>Años de Experiencia</p>
+            </div>
+            <div class="metric-card">
+                <h3>+50</h3>
+                <p>Proyectos en Chile</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section>
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Traslado de Maquinaria</h3>
+                    <p>Logística especializada y transporte seguro de equipos de gran tonelaje para la industria gráfica y de conversión.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Desmontaje y Montaje</h3>
+                    <p>Desarme técnico preciso y armado profesional de líneas de producción complejas y equipos especializados.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Montaje Multidisciplinario</h3>
+                    <p>Conexiones e instalaciones integrales en áreas eléctricas, mecánicas, neumáticas e hidráulicas.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Nivelación y Anclaje</h3>
+                    <p>Alineación de alta precisión milimétrica y fijación estructural para garantizar la estabilidad operativa de su maquinaria.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="contact">
+        <h2>Contacto Comercial</h2>
+        <p class="contact-info">Representante: <strong>Juan Gianini</strong> (Gerente Técnico)</p>
+        <p class="contact-info">📞 Teléfono / WhatsApp: <a href="tel:+56956176000">+56 9 5617 6000</a></p>
+        <p class="contact-info">✉️ Email: <a href="mailto:ventasbocov-veronica@gmail.com">ventasbocov-veronica@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Comercial BOCOV SpA. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
